@@ -9,8 +9,10 @@ Welcome to Draft documentation's documentation!
 ===============================================
 
 .. image:: https://readthedocs.org/projects/draft-docs/badge/?version=latest
+
 :target: https://draft-docs.readthedocs.io/en/latest/?badge=latest
 :alt: Documentation Status
+
 
 .. toctree::
    :maxdepth: 2
