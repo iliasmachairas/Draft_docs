@@ -1,0 +1,4 @@
+Moving average of monthly quantile (variable threshold for short)
+====================================================================
+
+Hello everybody!

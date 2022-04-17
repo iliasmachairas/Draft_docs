@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Draft documentation'
+project = 'Threshold Method'
 copyright = '2022, Ilias Machairas'
 author = 'Ilias Machairas'
 
@@ -39,7 +39,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'pages/fixed_thre']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.pages/*']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -48,6 +48,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'pages/fixed_thre']
 # a list of builtin themes.
 #
 html_theme = "sphinx_rtd_theme"
+
+html_theme_options = {
+    'collapse_navigation': False,
+    'sticky_navigation': False,
+    'navigation_depth': 4
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
