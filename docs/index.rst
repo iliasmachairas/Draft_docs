@@ -49,12 +49,18 @@ On the other hand, regarding a state variable, severity is the maximum variance 
 during the drought event :ref:`Van Loon (2012) <Van_Loon>`.
 
 .. figure:: images/Initial_chart_part_1.png
-  :width: 600
+  :width: 500
   :alt: Drought characteristics for a state hydrological variable
+  :align: center
 
-  *Drought characteristics for a state hydrological variable*
+  *Drought characteristics for a state hydrological variable (in this case groundwater level was used)*
 
 It is worth mentioning methodology for threshold functions were derived by :ref:`Beyene (2014) <Beyene>`.
+
+.. admonition :: Attention!
+
+   For the time being, the current package works only for state variables (e.g. groundwater level, soil moisture) not
+   flux ones (e.g. precipitation).
 
 Fixed Threshold
 -----------------------
@@ -73,6 +79,7 @@ to smooth the \'staircase differences\' and extinguish the abrupt jumps in thres
 .. figure:: images/Variable_Threshold_V2_compressed-1.png
   :width: 800
   :alt: Estimation of Variable Threshold function
+  :align: center
   
   *Estimation of Variable Threshold function*
 
@@ -117,7 +124,17 @@ Application
 
 Example for fixed threshold
 ----------------------------------------
-Draft
+In this example, we will use fixed threshold method. For this tutorial, it is assumed that you have basic knowledge
+of matplotlib and pandas libraries. Let's get started.
+
+The user will provide the dataframe. In this example, we will use an excel file called “data.xlsx”.
+Let’s load the data. This dataset includes groundwater levels from 1-Apr-2018 to 31-Mar-2019 and the time step is daily.
+
+.. admonition :: Attention!
+
+   Jupyter Notebook was used in this tutorial.
+
+
 
 Example for variable threshold
 ----------------------------------------
