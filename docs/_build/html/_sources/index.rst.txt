@@ -134,6 +134,10 @@ Let’s load the data. This dataset includes groundwater levels from 1-Apr-2018 
 
    Jupyter Notebook was used in this tutorial.
 
+::
+
+   data = pd.read_excel('data.xlsx')
+   data.head();
 
 
 Example for variable threshold
