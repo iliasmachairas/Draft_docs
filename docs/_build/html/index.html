@@ -114,13 +114,18 @@ monthly time steps in following versions.</p>
 for a drought event where deficit is the subtraction of the hydrological flux from the threshold.
 On the other hand, regarding a state variable, severity is the maximum variance from the threshold
 during the drought event <a class="reference internal" href="#van-loon"><span class="std std-ref">Van Loon (2012)</span></a>.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="_images/Initial_chart_part_1.png"><img alt="Drought characteristics for a state hydrological variable" src="_images/Initial_chart_part_1.png" style="width: 600px;" /></a>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Initial_chart_part_1.png"><img alt="Drought characteristics for a state hydrological variable" src="_images/Initial_chart_part_1.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text"><em>Drought characteristics for a state hydrological variable</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Drought characteristics for a state hydrological variable (in this case groundwater level was used)</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>It is worth mentioning methodology for threshold functions were derived by <a class="reference internal" href="#beyene"><span class="std std-ref">Beyene (2014)</span></a>.</p>
+<div class="admonition-attention admonition">
+<p class="admonition-title">Attention!</p>
+<p>For the time being, the current package works only for state variables (e.g. groundwater level, soil moisture) not
+flux ones (e.g. precipitation).</p>
+</div>
 </section>
 <section id="fixed-threshold">
 <h2><span class="sectnum">2.2</span> Fixed Threshold<a class="headerlink" href="#fixed-threshold" title="Permalink to this headline"></a></h2>
@@ -132,7 +137,7 @@ during the drought event <a class="reference internal" href="#van-loon"><span cl
 determined with the help of the cumulative distribution function (CDF) from all daily values in that month over all years, (ii) the value
 of that monthly percentile was assigned to all days of the month, and (iii) backwards moving average of 20 days was applied to the whole year
 to smooth the 'staircase differences' and extinguish the abrupt jumps in threshold function between consecutive months.</p>
-<figure class="align-default" id="id3">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/Variable_Threshold_V2_compressed-1.png"><img alt="Estimation of Variable Threshold function" src="_images/Variable_Threshold_V2_compressed-1.png" style="width: 800px;" /></a>
 <figcaption>
 <p><span class="caption-text"><em>Estimation of Variable Threshold function</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
@@ -172,7 +177,14 @@ than a specific threshold, pooling was conducted.</p>
 <h1><span class="sectnum">3</span> Application<a class="headerlink" href="#application" title="Permalink to this headline"></a></h1>
 <section id="example-for-fixed-threshold">
 <h2><span class="sectnum">3.1</span> Example for fixed threshold<a class="headerlink" href="#example-for-fixed-threshold" title="Permalink to this headline"></a></h2>
-<p>Draft</p>
+<p>In this example, we will use fixed threshold method. For this tutorial, it is assumed that you have basic knowledge
+of matplotlib and pandas libraries. Let’s get started.</p>
+<p>The user will provide the dataframe. In this example, we will use an excel file called “data.xlsx”.
+Let’s load the data. This dataset includes groundwater levels from 1-Apr-2018 to 31-Mar-2019 and the time step is daily.</p>
+<div class="admonition-attention admonition">
+<p class="admonition-title">Attention!</p>
+<p>Jupyter Notebook was used in this tutorial.</p>
+</div>
 </section>
 <section id="example-for-variable-threshold">
 <h2><span class="sectnum">3.2</span> Example for variable threshold<a class="headerlink" href="#example-for-variable-threshold" title="Permalink to this headline"></a></h2>
